@@ -1,0 +1,76 @@
+/* Checkout Page Styles */
+
+/* Checkout Section Styling */
+.checkout-section {
+    padding: 20px 0;
+  }
+  
+  .checkout-section h2,
+  .checkout-section h4 {
+    color: #343a40;
+    margin-bottom: 15px;
+  }
+  
+  /* Form Styling */
+  .checkout-section form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-section form .form-group label {
+    font-weight: bold;
+  }
+  
+  .checkout-section form .form-control {
+    border-radius: 4px;
+  }
+  
+  /* Order Summary Styling */
+  .order-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .order-summary p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  /* Payment Method Section */
+  .payment-methods {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Place Order Button */
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  /* Responsive Design for smaller devices */
+  @media (max-width: 767px) {
+    .checkout-section .row > div {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Additional styles as needed */
+    .footer {
+    background-color: #1d76ce;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+  }

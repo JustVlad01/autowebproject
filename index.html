@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="common.js"></script>
+  <script src="index.js"></script>
+  <script src="login.js"></script>
+  <title>Irish Motor Parts</title>
+</head>
+<body>
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="index.html">
+    <img src="images index/change_2-removebg-preview (1).png" alt="Car Image" class="navbar-brand img" width="260" height="50">
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active ">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="login.html" id="loginLogoutLink">Login</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Irish Motor Parts</h2>
+          <p>Miles of smiles, Find the part that keeps you and your car smiling.</p>
+          <a href="products.html" class="btn btn-primary">Find your part</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="Products images/bmw header image.png" alt="Car Image" width="550" height="380">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Car Shop Description Section -->
+  <section class="car-shop-description">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <br><br>
+          <p>Welcome to your own Irish Motor parts shop, Based in County Sligo we source the highest quality parts for the most affordable prices. Can't find what you're looking for? Make sure to send your inquiry by email, and one of our representatives will get back to you. Free Delivery on All orders over 70 euros. Orders outside the Republic of Ireland will have an additional service charge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Most Popular Items Section -->
+  <section class="featured-cars">
+    <div class="container">
+      <h4>Find your Parts</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images index/motor-oil.jpg" class="card-img-top" alt="Car 1" height="400px">
+            <div class="card-body">
+              <h5 class="card-title">Oil and Lubricants</h5>
+              <p class="card-text">Oils, Fluids, Engine Oil</p>
+            </div>
+            <a href="products.html" class="btn btn-primary">Browse More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images index/break-disc.jpg" class="card-img-top" alt="Car 2">
+            <div class="card-body">
+              <h5 class="card-title">Braking Parts</h5>
+              <p class="card-text">Brake Pads, Brake Discs</p>
+            </div>
+            <a href="products.html" class="btn btn-primary">Browse More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images index/carsuspension.jpg" class="card-img-top" alt="Car 3">
+            <div class="card-body">
+              <h5 class="card-title">Body and Suspension</h5>
+              <p class="card-text">Wheel Drive, Steering Parts</p>
+            </div>
+            <a href="products.html" class="btn btn-primary">Browse More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Calculator Section -->
+  <div class="col-md-12 paymentCalc">
+
+    <div class="col-md-6">
+  
+      <form id="loanCalc" action="" method="get" class="">
+        <div class="col-md-12">
+          <h2>Buy Now, Pay loanTerm</h2>
+          <div class="form-group">
+            <label for="vehiclePrice">Part Price</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="form-control" id="vehiclePrice" placeholder="Vehicle Price">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="downPayment">Down Payment</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="form-control" id="downPayment" placeholder="Down Payment" value="0">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="tradeValue">Value of Tradeable item</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="form-control" id="tradeValue" placeholder="Trade In Value" value="0">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="intRate">Interest Rate</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="form-control" id="intRate" placeholder="Interest Rate" value="3.25">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="loanTerm">Loan Term</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="form-control" id="loanTerm" placeholder="Loan Term (ex: 36 Months)">
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12">
+          <a href="#" class="calcBtn" onclick="calculatePayments()" id="calculate" value="Calulate">Calculate</a>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <div id="paymentResults">
+  
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Irish Motor Parts. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
